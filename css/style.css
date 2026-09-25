@@ -1,5 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Manrope:wght@200..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+/* Header Section Start */
+header{
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 87px auto 41.8px;
+    align-items: center;
+    flex-wrap: wrap;
+}
+header > a{
+    text-decoration: none;
+    font-size: 24px;
+    color: #3A3A3A;
+    font-weight: bold;
+}
+header > ul{
+    list-style: none;
+    display: flex;
+}
+header > ul > li:not(:last-child){
+    margin-right: 34px;
+}
+header > ul > li > a{
+    text-decoration: none;
+    font-weight: 600;
+    color: #3A3A3A;
+}
+header > ul > li > a > img{
+    width: 24px;
+}
+.mobile-cart{
+    display: none;
+}
+.mobile-menu{
+    display: none;
+}
+/* Header Section End */
+
+/* Main Section Start */
+.main-container{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+/* Main Section End */
+
+/* Hero Section Start */
+.hero{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.hero > .left{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.hero > .left > h1{
+    font-size: 52px;
+    font-weight: bold;
+    line-height: 70px;
+    max-width: 582px;
+    color: #3A3A3A;
+}
+.hero > .left > p{
+    font-weight: 600;
+    color: #3A3A3A;
+    width: 505px;
+    margin: 16px 0;
+}
+.hero > .left > button{
+    width: 196px;
+    height: 44px;;
+    border: 1px solid black;
+    background: #E02C6D;
+    color: #fff;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    border-radius: 41px;
+}
+.hero > .right{
+    background: url("../images/feature/product_bg.png") no-repeat center;
+    background-size: cover;
+}
+/* Hero Section End */
+
+
+/* Small Device Css */
+@media  screen and (max-width: 768px) {
+    /* Header Section Start*/
+    header{
+        width: 100%;
+        padding: 0 20px;
+        align-items: center;
+    }
+    header > a{
+        font-size: 16px;
+    }
+    header > ul {
+        margin-top: 20px;
+        flex-direction: column;
+        width: 100%;
+        display: none;
+    }
+    header > ul.active{
+        display: flex;
+    }
+    header > ul > li{
+        margin-bottom: 15px;
+    }
+    header > ul > li:not(:last-child){
+        margin-right: 0;
+    }
+    header > ul > li:last-child{
+        display: none;
+    }
+    .mobile-cart{
+        display: block;
+    }
+    .mobile-menu{
+        display: block;
+    }
+    .mobile-menu > img, .mobile-cart > img{
+        width: 24px;
+        height: 24px;
+    }
+    /* Header Section End*/
+
+    /* Main Section Start */
+    .main-container{
+        width: 100%;
+        padding: 0 20px;
+    }
+    /* Main Section End */
+
+    /* Hero Section Start*/
+    .hero{
+        width: 100%;
+        flex-direction: column-reverse;
+        align-items: center;
+        text-align: center;
+    }
+    .hero > .left > h1{
+        width: 100%;
+        font-size: 28px;
+        line-height: 42px;
+        max-width: 100%;
+    }
+    .hero > .left > p{
+        width: 100%;
+        font-size: 14px;
+        font-weight: 500;
+    }
+    .hero > .right > img{
+        width: 100%;
+    }
+    /* Hero Section End*/
 }
