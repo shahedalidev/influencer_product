@@ -214,6 +214,89 @@ header > ul > li > a > img{
 }
 /* Popular-Collection Section End */
 
+/* Feature Product Section Start */
+.feature-product{
+    max-width: 1110px;
+    display: flex;
+    align-items: center;
+    gap: 96px;
+}
+/* .feature-product > div > img{
+    width: 100%;
+} */
+.feature-product > div > h2{
+    font-weight: bold;
+    font-size: 38px;
+    line-height: 60px;
+    color: #0A0826;
+    margin-bottom: 16px;
+}
+.feature-product > div > p{
+    font-weight: bold;
+    line-height: 28px;
+    color: #6c6c6c;
+    margin-bottom: 12px;
+}
+.feature-product > div > button{
+    width: 155px;
+    height: 44px;
+    background: #E02C6D;
+    border-width: 0;
+    color: #fff;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    cursor: pointer;
+}
+/* Feature Product Section End */
+
+/* Footer Section Start */
+footer{
+    width: 100%;
+    background: #0a0826;
+    color: #fff;
+    text-align: center;
+    padding: 50px 10px;
+    margin-top: 100px;
+}
+footer > h3{
+    font-style: 24px;
+    font-weight: bold;
+    margin-bottom: 3px;
+}
+footer > p{
+    font-weight: bold;
+    font-style: 14px;
+    line-height: 24px;
+    color: #d9dbe1;
+    margin-bottom: 3px;
+    font-family: Manrope;
+}
+.snav{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    margin-top: 17px;
+}
+.snav > li{
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.1);
+}
+.snav > li > a{
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;    
+}
+/* Footer Section End */
+
 
 /* Small Device Css */
 @media  screen and (max-width: 768px) {
@@ -307,4 +390,21 @@ header > ul > li > a > img{
         grid-template-columns: repeat(1, minmax(0, 100%));
     }
     /* Popular-Collection End */
+
+    /* Feature Section Start */
+    /* .feature-product > div > img{
+        width: 700px;
+    } */
+    .feature-product{
+        flex-direction: column-reverse;
+        text-align: center;
+        gap: 30px;
+    }
+    .feature-product > div{
+        text-align: center;
+    }
+    .feature-product > div > button{
+        margin: 0 auto;
+    }
+    /* Feature Section End */
 }
